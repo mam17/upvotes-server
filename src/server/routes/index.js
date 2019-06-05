@@ -18,7 +18,7 @@ router.get('/posts/', (req, res) => {
     getAllPosts()
         .then(value => {
             let data = Object.keys(value).map(e => { return { id: e, post: value[e] } })
-            //ORDENA POR DATA DE INCLUSAO
+            //ORDENA POR DATA DE INCLUSAO!
             res.status(200).send(data.sort((a, b) => a.creationDate > b.creationDate ? -1 : 1))
         })
 })
