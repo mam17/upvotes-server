@@ -7,7 +7,7 @@ open cmd and type this comands
 
 ```bash
 git clone https://github.com/mam17/upvotes-server.git
-cd server-app-node && npm install
+cd upvotes-server && npm install
 ```
 wait for complete
 ```
