@@ -1,0 +1,23 @@
+{
+  "name": "upvotes-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "babel": "./node_modules/.bin/babel src -d dist",
+    "start": "npm run babel && nodemon --delay 5 ./dist/App.js"
+  },
+  "author": "Murilo Medeiros",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "firebase": "^6.1.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.4.4",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "jest": "^24.8.0"
+  }
+}
